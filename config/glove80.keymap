@@ -48,7 +48,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
         };
