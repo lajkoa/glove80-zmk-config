@@ -48,7 +48,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
         };
     };
 
@@ -151,7 +151,7 @@
 &trans  &kp LC(RS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp TAB                                                       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp HOME             &kp LC(LEFT)           &kp LC(RIGHT)    &kp END            &kp ESCAPE                                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans               &trans                 &trans           &kp LG(S)          &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &kp LG(LS(TAB))  &kp LG(TAB)                      &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &kp LS(RG(TAB))  &kp RG(TAB)                      &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
