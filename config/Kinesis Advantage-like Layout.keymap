@@ -134,33 +134,6 @@ endif {
     #else
 
     macros {
-        bt_0: bt_0 {
-            label = "BT_0";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 0>;
-        };
-
-        bt_1: bt_1 {
-            label = "BT_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1>;
-        };
-
-        bt_2: bt_2 {
-            label = "BT_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 2>;
-        };
-
-        bt_3: bt_3 {
-            label = "BT_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 3>;
-        };
     };
 
     #endif
@@ -184,7 +157,7 @@ endif {
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
         };
     };
 };
