@@ -49,7 +49,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <125>;
             hold-trigger-on-release;
         };
     };
@@ -166,12 +166,12 @@
 
         layer_4 {
             bindings = <
-&trans  &trans               &trans                 &trans            &trans                                                                                   &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &trans            &trans             &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(RS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp TAB                                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp HOME             &kp LC(LEFT)           &kp LC(RIGHT)     &kp END            &kp ESCAPE                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &trans            &kp LG(S)          &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &super_shift_tab  &super_tab                       &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans           &trans                                                                                   &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans           &trans             &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(RS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp TAB                                                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp HOME             &kp LC(LEFT)           &kp LC(RIGHT)    &kp END            &kp ESCAPE                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans           &kp LG(S)          &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans           &trans                           &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
