@@ -95,6 +95,8 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_GUI &kp TAB>;
             label = "SUPER_TAB";
+            tap-ms = <40>;
+            wait-ms = <100>;
         };
 
         super_shift_tab: super_shift_tab {
@@ -102,6 +104,8 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_GUI &kp LEFT_SHIFT &kp TAB>;
             label = "SUPER_SHIFT_TAB";
+            wait-ms = <100>;
+            tap-ms = <40>;
         };
     };
 
@@ -122,7 +126,7 @@
 &kp EQUAL       &kp N1     &kp N2          &kp N3       &kp N4            &kp N5                                                                                        &kp N6  &kp N7             &kp N8       &kp N9          &kp N0    &kp MINUS
 &kp TAB         &kp Q      &kp W           &kp E        &kp R             &kp T                                                                                         &kp Y   &kp U              &kp I        &kp O           &kp P     &kp BSLH
 &kp ESC         &kp A      &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G                                                                                         &kp H   &hm RIGHT_SHIFT J  &hm RCTRL K  &hm LEFT_ALT L  &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z      &kp X           &kp C        &kp V             &kp B   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp HOME  &kp PAGE_UP    &kp LCMD  &kp RIGHT_CONTROL  &kp N   &kp M              &kp COMMA    &kp DOT         &kp FSLH  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &kp Z      &kp X           &kp C        &kp V             &kp B   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp HOME  &kp PAGE_UP    &kp LCMD  &kp RIGHT_CONTROL  &kp N   &lt 4 M            &kp COMMA    &kp DOT         &kp FSLH  &kp RIGHT_SHIFT
 &magic MAGIC 0  &kp GRAVE  &kp CAPSLOCK    &kp LEFT     &kp RIGHT                 &kp BSPC          &kp DEL       &kp END   &kp PAGE_DOWN  &kp RET   &kp SPACE                  &kp UP             &kp DOWN     &kp LBKT        &kp RBKT  &layer_td
             >;
         };
@@ -162,12 +166,12 @@
 
         layer_4 {
             bindings = <
-&trans  &trans               &trans                 &trans           &trans                                                                                   &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &trans           &trans             &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(RS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp TAB                                                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp HOME             &kp LC(LEFT)           &kp LC(RIGHT)    &kp END            &kp ESCAPE                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &trans           &kp LG(S)          &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                 &kp LS(RG(TAB))  &kp RG(TAB)                      &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans            &trans                                                                                   &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans            &trans             &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(RS(PAGE_UP))  &kp LC(LS(PAGE_DOWN))  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp TAB                                                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp HOME             &kp LC(LEFT)           &kp LC(RIGHT)     &kp END            &kp ESCAPE                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &trans            &kp LG(S)          &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                 &super_shift_tab  &super_tab                       &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
