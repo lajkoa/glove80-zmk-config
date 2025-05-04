@@ -93,19 +93,19 @@
         super_tab: super_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_GUI &kp TAB>;
+            bindings = <&kp RIGHT_GUI &kp TAB>, <&macro_press>;
+
             label = "SUPER_TAB";
-            tap-ms = <40>;
-            wait-ms = <100>;
+            tap-ms = <100>;
         };
 
         super_shift_tab: super_shift_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_GUI &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&kp RIGHT_GUI &kp LEFT_SHIFT &kp TAB>, <&macro_press>;
+
             label = "SUPER_SHIFT_TAB";
-            wait-ms = <100>;
-            tap-ms = <40>;
+            tap-ms = <100>;
         };
     };
 
