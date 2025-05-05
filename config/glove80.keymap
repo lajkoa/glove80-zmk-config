@@ -41,16 +41,30 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        hm: hm {
+        hm_right: hm_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM";
+            label = "HM_RIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            flavor = "balanced";
+            tapping-term-ms = <280>;
+            flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
             hold-trigger-on-release;
+            hold-trigger-key-positions = <54 71 53 70 69 52 51 39 27 15 14 26 38 50 68 4 3 13 25 37 67 49 48 66 36 24 12 2 1 11 35 65 47 23 22 10 0 34 64 46>;
+        };
+
+        hm_left: hm_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <56 72 55 73 57 74 58 75 59 76 61 77 60 42 43 41 40 28 29 30 31 19 18 16 17 6 5 7 9 8 32 20 21 33 45 44 62 63 79 78>;
         };
     };
 
@@ -122,12 +136,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1          &kp F2     &kp F3        &kp F4    &kp F5                                                                                                           &kp F6  &kp F7     &kp F8    &kp F9    &kp F10
-&kp EQUAL       &kp N1     &kp N2        &kp N3    &kp N4     &kp N5                                                                                        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q      &kp W         &kp E     &kp R      &kp T                                                                                         &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC         &kp A      &kp S         &kp D     &kp F      &kp G                                                                                         &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z      &kp X         &kp C     &kp V      &kp B   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp HOME  &kp PAGE_UP    &kp LCMD  &kp RIGHT_CONTROL  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
-&magic MAGIC 0  &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT          &kp BSPC          &kp DEL       &kp END   &kp PAGE_DOWN  &kp RET   &kp SPACE                  &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &layer_td
+&kp F1          &kp F2               &kp F3               &kp F4            &kp F5                                                                                                                  &kp F6                   &kp F7             &kp F8                &kp F9                   &kp F10
+&kp EQUAL       &kp N1               &kp N2               &kp N3            &kp N4            &kp N5                                                                                        &kp N6  &kp N7                   &kp N8             &kp N9                &kp N0                   &kp MINUS
+&kp TAB         &kp Q                &kp W                &kp E             &kp R             &kp T                                                                                         &kp Y   &kp U                    &kp I              &kp O                 &kp P                    &kp BSLH
+&kp ESC         &hm_left LEFT_GUI A  &hm_left LEFT_ALT S  &hm_left LCTRL D  &hm_left LSHFT F  &kp G                                                                                         &kp H   &hm_right RIGHT_SHIFT J  &hm_right RCTRL K  &hm_right LEFT_ALT L  &hm_right LEFT_GUI SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z                &kp X                &kp C             &kp V             &kp B   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp HOME  &kp PAGE_UP    &kp LCMD  &kp RIGHT_CONTROL  &kp N   &kp M                    &kp COMMA          &kp DOT               &kp FSLH                 &kp RIGHT_SHIFT
+&magic MAGIC 0  &kp GRAVE            &kp CAPSLOCK         &kp LEFT          &kp RIGHT                 &kp BSPC          &kp DEL       &kp END   &kp PAGE_DOWN  &kp RET   &kp SPACE                  &kp UP                   &kp DOWN           &kp LBKT              &kp RBKT                 &layer_td
             >;
         };
 
