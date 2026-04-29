@@ -41,33 +41,6 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        hm_right: hm_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_RIGHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            flavor = "balanced";
-            require-prior-idle-ms = <125>;
-            hold-trigger-key-positions = <51 39 27 15 14 26 38 50 68 4 3 13 25 37 67 49 48 66 36 24 12 2 1 11 35 65 47 23 22 10 0 34 64 46 52 53 54 70 69 70 71 55 57 56 73 72 74>;
-            quick-tap-ms = <170>;
-        };
-
-        hm_left: hm_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HM_LEFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            require-prior-idle-ms = <125>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <58 75 59 76 61 77 60 42 43 41 40 28 29 30 31 19 18 16 17 6 5 7 9 8 32 20 21 33 45 44 62 63 79 78 52 53 54 70 71 69 57 74 73 72 55 56>;
-            quick-tap-ms = <150>;
-            hold-while-undecided;
-        };
-
         hrm_index_right: hrm_index_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_INDEX_RIGHT";
@@ -76,7 +49,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <170>;
             flavor = "balanced";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             hold-trigger-key-positions = <51 39 27 15 14 26 38 50 68 4 3 13 25 37 67 49 48 66 36 24 12 2 1 11 35 65 47 23 22 10 0 34 64 46 52 53 54 71 70 69 55 56 57 74 73 72>;
             quick-tap-ms = <200>;
             retro-tap;
@@ -90,7 +63,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             flavor = "balanced";
             hold-trigger-key-positions = <58 75 59 76 61 77 60 42 43 41 40 28 29 30 31 19 18 16 17 6 5 7 9 8 32 20 21 33 45 44 62 63 79 78 55 56 57 74 73 72 53 54 71 69 70 52>;
             quick-tap-ms = <200>;
@@ -106,7 +79,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <230>;
             flavor = "balanced";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             hold-trigger-key-positions = <51 39 27 15 14 26 38 50 68 4 3 13 25 37 67 49 48 66 36 24 12 2 1 11 35 65 47 23 22 10 0 34 64 46 52 53 54 71 70 69 55 56 57 74 72 73>;
             quick-tap-ms = <200>;
             retro-tap;
@@ -120,7 +93,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <230>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             flavor = "balanced";
             hold-trigger-key-positions = <58 75 59 76 61 77 60 42 43 41 40 28 29 30 31 19 18 16 17 6 5 7 9 8 32 20 21 33 45 44 62 63 79 78 56 74 73 72 55 57 52 69 53 70 71 54>;
             quick-tap-ms = <200>;
@@ -136,7 +109,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             hold-trigger-key-positions = <51 39 27 15 14 26 38 50 68 4 3 13 25 37 67 49 48 66 36 24 12 2 1 11 35 65 47 23 22 10 0 34 64 46 52 53 54 71 70 69 55 56 57 74 73 72>;
             quick-tap-ms = <200>;
             retro-tap;
@@ -150,7 +123,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             flavor = "balanced";
             hold-trigger-key-positions = <58 75 59 76 61 77 60 42 43 41 40 28 29 30 31 19 18 16 17 6 5 7 9 8 32 20 21 33 45 44 62 63 79 78 72 73 74 55 56 57 52 54 53 70 71 69>;
             quick-tap-ms = <200>;
@@ -166,7 +139,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <270>;
             flavor = "balanced";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             hold-trigger-key-positions = <51 39 27 15 14 26 38 50 68 4 3 13 25 37 67 49 48 66 36 24 12 2 1 11 35 65 47 23 22 10 0 34 64 46 71 54 53 70 52 69 74 57 73 56 55 72>;
             quick-tap-ms = <200>;
             retro-tap;
@@ -180,7 +153,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <270>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <180>;
             flavor = "balanced";
             hold-trigger-key-positions = <58 75 59 76 61 77 60 42 43 41 40 28 29 30 31 19 18 16 17 6 5 7 9 8 32 20 21 33 45 44 62 63 79 78 73 72 55 57 56 74 71 54 53 70 52 69>;
             quick-tap-ms = <200>;
