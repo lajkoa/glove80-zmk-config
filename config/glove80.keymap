@@ -54,6 +54,7 @@
             quick-tap-ms = <170>;
             retro-tap;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hrm_index_left: hrm_index_left {
@@ -69,6 +70,7 @@
             quick-tap-ms = <170>;
             retro-tap;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hrm_middle_right: hrm_middle_right {
@@ -84,6 +86,7 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hrm_middle_left: hrm_middle_left {
@@ -99,6 +102,7 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hrm_ring_right: hrm_ring_right {
@@ -146,6 +150,7 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         hrm_pinky_left: hrm_pinky_left {
@@ -161,6 +166,7 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
     };
 
