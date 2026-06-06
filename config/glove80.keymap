@@ -54,7 +54,6 @@
             quick-tap-ms = <170>;
             retro-tap;
             hold-trigger-on-release;
-            hold-while-undecided;
         };
 
         hrm_index_left: hrm_index_left {
@@ -70,7 +69,6 @@
             quick-tap-ms = <170>;
             retro-tap;
             hold-trigger-on-release;
-            hold-while-undecided;
         };
 
         hrm_middle_right: hrm_middle_right {
