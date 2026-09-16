@@ -84,7 +84,6 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
-            hold-while-undecided;
         };
 
         hrm_middle_left: hrm_middle_left {
@@ -100,7 +99,6 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
-            hold-while-undecided;
         };
 
         hrm_ring_right: hrm_ring_right {
@@ -116,7 +114,6 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
-            hold-while-undecided;
         };
 
         hrm_ring_left: hrm_ring_left {
@@ -132,7 +129,6 @@
             quick-tap-ms = <200>;
             retro-tap;
             hold-trigger-on-release;
-            hold-while-undecided;
         };
 
         hrm_pinky_right: hrm_pinky_right {
